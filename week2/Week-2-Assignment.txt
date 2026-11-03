@@ -1,0 +1,26 @@
+Week 2 assignment: from requirements to automated tests
+Finish this before the next session. Allow about three hours.
+This time there is no scenario to follow. The shop owner has sent a list of requirements (see Week-2-Assignment-Requirements.docx). You work out what to test, write the test cases, and then automate some of them with an AI assistant (Copilot, or Claude if you have it). Push everything to the same repo as last week, in a week2 folder.
+You own every line. If your script has a line you can't explain, you aren't finished. We'll ask about a few of them next session.
+What to do
+1. Read the requirements. Anything unclear or missing? Write down what you would ask the owner.
+2. Write your test cases in week2/test_cases.csv, with these columns: ID, Req (the requirement number), Test case, Preconditions, Steps, Test data, Expected result, Priority. Every numbered requirement needs at least one test case. Think about what could go wrong, not only what should work.
+3. Pick at least six test cases to automate. Between them they should cover search, sorting, the cart and the contact form.
+4. Write a prompt and let the assistant draft the tests. The cheat sheet has a template. Save the prompt in week2/prompt.md.
+5. Save the answer as week2/tests.py and commit it untouched with the message "AI first draft".
+6. Run it, read the errors, and fix one problem at a time. Commit each fix with a message saying what you fixed.
+7. Write week2/notes.md: your questions for the owner, at least three things the assistant got wrong and how you found each one, and one thing it got right.
+The site's data changes, so don't hard-code product names or prices. Some products are out of stock, so be ready for that.
+What the final script needs
+• One function per test case, named with its ID, so you can run any one of them.
+• Running it prints PASS or FAIL for each test case and exits with code 1 if any failed.
+• No time.sleep. Use Playwright's waiting and expect.
+• Helper functions for steps that repeat.
+• Never presses Send on a filled-in contact form. It sends a real message.
+• Python guide style.
+Hand it in
+Push week2/test_cases.csv, week2/prompt.md, week2/tests.py and week2/notes.md to your repo. Then post "Week 2 is up" in Teams before the next session. Your commit history should show the AI draft first, then your fixes.
+If you get stuck
+Read the last line of the error first. When you paste an error into the assistant, include the line that failed and what you saw on the page, and read its fix before you accept it. If a value on the page doesn't change when you expect it to, think about what a real user does next. Still stuck? Ask in Teams.
+Week 2 assignment  |  page 1
+

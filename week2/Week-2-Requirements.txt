@@ -1,0 +1,30 @@
+Round two: what we need from the shop website
+From: the shop owner
+To: the dev and QA team
+Hi team,
+Thanks for the first round. Here is the next batch. It is the same shop, so the same rules apply: build against it, test against it, and ask me if something isn't clear. I've written down what I want, not how to check it. That part is up to you.
+1. Search
+1.1	Customers can search by typing a word and clicking the search button, or by pressing Enter. Both should give the same products.
+1.2	If nothing matches, the page should say so and show no products.
+1.3	There's a small clear button next to the search box. Clicking it should empty the box and bring back the full list of products.
+2. Sorting
+2.1	Customers can sort by price from high to low, so the most expensive product comes first, and by name from Z to A.
+2.2	Sorting has to work inside a category too. In Power Tools, sorting by price should show only power tools in the right order, and the page should still say which category it is.
+3. Cart
+3.1	On a product page, customers can type any quantity they like, not only use the plus and minus buttons. The cart should show the quantity they typed.
+3.2	In the cart, customers can change the quantity of an item. The line price, the cart total and the number on the cart icon should all follow.
+3.3	For eco products the cart total comes out a bit lower than the lines add up to. That's a discount and it's on purpose. Please don't report it as a bug, but do make sure the line price itself is right.
+3.4	Customers can remove an item from the cart. When the last one goes, the cart should say it is empty.
+4. Contact form
+4.1	The Contact page has first name, last name, email, subject (a dropdown) and message. All five are needed before it can be sent.
+4.2	If someone presses Send with fields empty, the form should say what's missing, one message under each empty field.
+4.3	While someone fills the form in, it should keep what they have typed and chosen.
+One warning. Anything sent through this form reaches my real inbox. Please fill it in and check it all you like, but never press Send on a form that is filled in.
+5. Things I haven't decided
+5.1	Some products are out of stock. I haven't decided what message to show, but nobody should be able to add one to the cart.
+6. Not now
+Logging in, checkout and payment, and order history. Those come later, so leave them out of this round.
+Thanks,
+The shop owner
+Round two requirements  |  page 1
+
