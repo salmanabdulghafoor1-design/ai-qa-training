@@ -5,5 +5,5 @@ Price (High - Low),"price,desc",price,desc,true
 Price (Low - High),"price,asc",price,asc,true
 CO₂ Rating (A - E),"co2_rating,asc",co2,asc,true
 CO₂ Rating (E - A),"co2_rating,desc",co2,desc,true
-Unsupported sort,,invalid,asc,false
-Price ascending,,invalid,asc,false
+Unsupported sort,Unsupported sort,invalid,asc,false
+Price ascending,Price ascending,invalid,asc,false

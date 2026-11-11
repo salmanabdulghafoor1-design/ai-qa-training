@@ -4,6 +4,7 @@ from pathlib import Path
 from playwright.sync_api import Page, expect, sync_playwright
 
 SHOP_URL = "https://practicesoftwaretesting.com"
+API_URL = "https://api.practicesoftwaretesting.com"
 
 
 def initialize_browser():
@@ -22,6 +23,25 @@ def cleanup_browser(playwright, browser):
     try:
         if browser is not None:
             browser.close()
+    finally:
+        playwright.stop()
+
+
+def initialize_api():
+    playwright = sync_playwright().start()
+    api = None
+    try:
+        api = playwright.request.new_context(base_url=API_URL)
+        return playwright, api
+    except Exception:
+        cleanup_api(playwright, api)
+        raise
+
+
+def cleanup_api(playwright, api):
+    try:
+        if api is not None:
+            api.dispose()
     finally:
         playwright.stop()
 
