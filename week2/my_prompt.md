@@ -6,7 +6,7 @@ Use the Playwright MCP tools to:
 4. Identify the controls as referenced in week2/tests.py file.
 5. Generate reliable Playwright Python locators for these elements.
 6. Verify each locator uniquely identifies its intended element.
-7. Return production-ready Python code using page.get_by_role(), page.get_by_label(), or page.get_by_test_id() wherever appropriate.
+7. Return production-ready Python code using data-test and ids wherever appropriate. Examples: page.locator('[data-test="cart-quantity"]')   expect(page).to_have_title("Checkout - Practice Software Testing - Toolshop - v5.0")   
 8. Do not guess locators. Inspect the live page first. 
 9. Now generate a Python Playwright locator repository snippet.
 a. For every locator:
