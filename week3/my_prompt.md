@@ -1,0 +1,5 @@
+Install and configure pytest in .venv.
+Analyze and understand how tests and supporting files are organized and what they contain for parameterized UI and API level tests from session_3_demo_code folder. 
+Read and understand test_sort_by_price_low_to_high and its dependencies from week2 folder.
+Create week3 folder in ai-qa-training. Create new helpers.py containing above read parameterized test (with all dependencies) with possible sorting values, based on pytest. Include valid and invalid values for sorting. Copy all supporting code from helpers.py from session_3_demo_code folder.
+Create these in week3 folder: data.csv containing data values. a data.csv with your values, your test run once per row with parametrize (like test_2 of  session_3_demo_code folder), and one API test that checks the status and at least three fields, then compares one with what the page shows (like test_3 and test_4, of  session_3_demo_code folder). The cheat sheet has prompts. Save yours in week3/prompt.md.

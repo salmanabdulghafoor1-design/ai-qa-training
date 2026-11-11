@@ -1,4 +1,9 @@
-search_word
-hammer
-pliers
-drill
+sort_option,sort_value,sort_type,direction,is_valid
+Name (A - Z),"name,asc",name,asc,true
+Name (Z - A),"name,desc",name,desc,true
+Price (High - Low),"price,desc",price,desc,true
+Price (Low - High),"price,asc",price,asc,true
+CO₂ Rating (A - E),"co2_rating,asc",co2,asc,true
+CO₂ Rating (E - A),"co2_rating,desc",co2,desc,true
+Unsupported sort,,invalid,asc,false
+Price ascending,,invalid,asc,false
